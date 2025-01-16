@@ -358,4 +358,16 @@ keymap = [
 
 	# Filtering
 	{ on = "f", run = "filter", desc = "Apply a filter for the help items" },
+
+	# Open terminal in the current directory with Alt+Ctrl+T
+	{ on = "<C-A-t>", run = "shell gnome-terminal --working-directory=\"$PWD\"", desc = "Open terminal in the current directory" },
+
+    # {on = "<C-S-c>",  run = "copy",  desc = "Copy the selected file"},
+    # {on = "<C-S-x>",  run = "cut",   desc = "Cut the selected file"},
+    # {on = "<C-S-v>",  run = "paste", desc = "Paste the cut/copied file"},
+    # {on = "Delete",   run = "delete",desc = "Delete the selected file"},
+	{on = "Space",    run = "toggle_selection",desc = "Toggle file selection"}
+
+
 ]
+
